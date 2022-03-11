@@ -1,8 +1,6 @@
 </header>
 <body>
-  <div class="well">
-    <%= link_to '+ New Category', [:new, :admin, :category], class: 'btn btn-primary' %>
-  </div>
+  <h1>Product Inventory</h1>
   <table class="table table-bordered">
     <thead>
       <tr>
@@ -14,4 +12,7 @@
       <%= render @categories %>
     </tbody>
   </table>
+  <div class="well">
+    <%= link_to '+ New Category', [:new, :admin, :category], class: 'btn btn-primary' %>
+  </div>
 </body>
