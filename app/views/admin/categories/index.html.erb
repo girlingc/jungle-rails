@@ -1,19 +1,17 @@
-<header class="page-header"></header>
-
+</header>
 <body>
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th colspan="2">Image</th>
-          <th>Category</th>
-          <th>Product Quantity</th>
-        </tr>
-      </thead>
-      <tbody>
-        <%= render @categories %>
-      </tbody>
-    </table>
-
+  <div class="well">
+    <%= link_to '+ New Category', [:new, :admin, :category], class: 'btn btn-primary' %>
   </div>
-
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Product Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render @categories %>
+    </tbody>
+  </table>
 </body>
