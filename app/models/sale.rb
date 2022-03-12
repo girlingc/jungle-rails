@@ -4,7 +4,7 @@ class Sale < ActiveRecord::Base
   end
 
   def upcoming?
-  ends_on > Date.current
+  starts_on > Date.current
   end
 
   def active?
